@@ -23,7 +23,7 @@ function getDataOnLoad(){
 			}
 		},
 		error: function(jqXHR, textStatus, errorThrown){
-			$('#ticker').show().text('Something went wrong...!!!');
+			$('#ticker').show().text('Error while Fetching data from 3rd party API.');
 		},
 		complete: function(data){
 			arr = JSON.parse(data.responseText);

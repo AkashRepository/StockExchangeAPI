@@ -70,7 +70,7 @@ public class GetTickerData extends HttpServlet {
 			e.printStackTrace();
 			JSONObject obj = new JSONObject();
 			obj.put("error-status", "1");
-			obj.put("error-msg","Something went wrong.");
+			obj.put("error-msg","Ticker not found.");
 			larr.add(obj);
 			lpw.write(larr.toJSONString().toString());
 		} finally{

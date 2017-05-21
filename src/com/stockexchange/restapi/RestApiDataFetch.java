@@ -25,7 +25,8 @@ public class RestApiDataFetch {
 
 
 	/**
-	 * @param args
+	 * @param TicketName
+	 * @brief This function is used to fetch data from 3rd Party API.
 	 */
 
 	public static JSONArray getJSONFromApi(String searchTicker){
@@ -55,7 +56,7 @@ public class RestApiDataFetch {
 				e.printStackTrace();
 
 				obj.put("error-status", "1");
-				obj.put("error-msg", "error while parsing restapi data.");
+				obj.put("error-msg", "error while parsing REST API data, please try again.");
 				jsonobj.add(obj);
 			}
 
@@ -70,7 +71,7 @@ public class RestApiDataFetch {
 
 
 			obj.put("error-status", "1");
-			obj.put("error-msg", "URL error at rest api site.");
+			obj.put("error-msg", "URL error at rest api site, please try again.");
 			jsonobj.add(obj);
 			e.printStackTrace();
 
@@ -78,7 +79,7 @@ public class RestApiDataFetch {
 
 
 			obj.put("error-status", "1");
-			obj.put("error-msg", "IO exception.");
+			obj.put("error-msg", "Error while connecting with 3rd party API, please try again.");
 			jsonobj.add(obj);
 			e.printStackTrace();
 

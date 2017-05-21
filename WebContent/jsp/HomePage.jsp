@@ -54,13 +54,13 @@ tr:nth-child(even){background-color: #f2ffff}
 <table style="width:100%;text-align: center;height: 100%;" id='ticketTable'>
 	<tr><td colspan=2><b>Details of Ticker</b></td></tr>
 	
-	<tr><td>company</td><td><div id="company"></div></td></tr>
+	<tr><td>Company</td><td><div id="company"></div></td></tr>
 	<tr><td>Exchange</td><td><div id="Exchange"></div></td></tr>
-	<tr><td>LastPrice</td><td><div id="LastPrice"></div></td></tr>
-	<tr><td>LastTradeTime</td><td><div id="LastTradeTimeFormatted"></div></td></tr>
+	<tr><td>Last Price</td><td><div id="LastPrice"></div></td></tr>
+	<tr><td>Last Trade Time</td><td><div id="LastTradeTimeFormatted"></div></td></tr>
 	<tr><td>Price</td><td><div id="Price"></div></td></tr>
 	<tr><td>Change</td><td><div id="Change"></div></td></tr>
-	<tr><td>ChangePercentage</td><td><div id="ChangePercentage"></div></td></tr>
+	<tr><td>Change Percentage</td><td><div id="ChangePercentage"></div></td></tr>
 
 <!-- 	<tr><td>AfterHoursLastPrice</td><td>	<div id="AfterHoursLastTradeTimeFormatted"></div></td></tr> -->
 </table>
@@ -76,7 +76,7 @@ tr:nth-child(even){background-color: #f2ffff}
 <!-- 		<div id="DividendYield"></div> -->
 	</div>
 	<div id="#recentTicker" style="display: block; width:61%;height:34.5%;float:left;padding:0.25%;">
-	<center><div style="    width: 98%;    margin: 2%;top:-2%"><label >Click here to view company details : </label><input type='button' value='companyDetails' onclick='getCompanyDetails();'></div></center>
+	<center><div style="    width: 98%;    margin: 2%;top:-2%"><label >Click here to view company details : </label><input type='button' value='Company Details' onclick='getCompanyDetails();'></div></center>
 		<table style="width:100%;text-align: center;height: 100%;" id="CompanyTable">
 	<tr><td colspan=2><b>Details of Company</b></td></tr>
 	
